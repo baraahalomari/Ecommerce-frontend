@@ -1,0 +1,35 @@
+.form-demo .card {
+  min-width: 450px;
+}
+.form-demo .card form {
+  margin-top: 2rem;
+}
+.form-demo{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#suggestions{
+
+  position: relative;
+  height: 8rem;
+}
+.btn{
+  margin-top: 1rem;
+}
+.form-demo .card .field {
+  margin-bottom: 1.5rem;
+
+}
+@media screen and (max-width: 960px) {
+  .form-demo .card {
+      width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form-demo .card {
+      width: 100%;
+      min-width: 0;
+  }
+}

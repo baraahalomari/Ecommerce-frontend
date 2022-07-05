@@ -1,0 +1,13 @@
+.fieldb{
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.actionDialog{
+  display : flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  position:sticky;
+}
