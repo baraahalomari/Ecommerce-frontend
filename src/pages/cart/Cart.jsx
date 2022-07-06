@@ -30,12 +30,9 @@ const Cart = () => {
         const handleAddToCart = (v) => {
             const dataItem = {
                 product_id: data.id,
-                user_id: decodedToken.id,
+                user_id: decodedToken?.id,
                 quantity: v,
-                price: parseInt(data.item_price),
                 total_price: parseInt(data.item_price) * v,
-                name: data.item_name,
-                selectedfile: data.selectedfile,
             }
             dispatch(addToCart(dataItem))
         }

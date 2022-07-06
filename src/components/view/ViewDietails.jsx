@@ -42,16 +42,14 @@ const ViewDietails = ({ displayResponsive2, setDisplayResponsive2, currentPrudoc
       product_id: product.id,
       user_id: decodedToken?.id,
       quantity: 1,
-      price: product.price,
-      name: product.name,
-      selectedfile: product.selectedfile,
+      total_price: product.price,
     }
     dispatch(addToCart(data))
     showSuccess()
   }
   const handleAddToFavorite = () => {
  if(!checkFav){
-     const data =  { id:currentPrudoct.id , name:currentPrudoct.name, user_id:decodedToken.id,selectedfile:currentPrudoct.selectedfile,price:currentPrudoct.price ,description:currentPrudoct.description,status:currentPrudoct.status,category: currentPrudoct.category}
+     const data =  { product_id:currentPrudoct.id , user_id:decodedToken.id}
     dispatch(addToFav(data))
     showSuccessFav()
  }else{

@@ -60,13 +60,12 @@ const Fav = () => {
   }
 
   const handleAddToCart = (product) => {
+    console.log(product)
     const data = {
-      product_id: product.id,
-      user_id: decodedToken.id,
+      product_id: product.product_id,
+      user_id: decodedToken?.id,
       quantity: 1,
-      price: product.price,
-      name: product.name,
-      selectedfile: product.selectedfile,
+      total_price: product.price,
     }
     dispatch(addToCart(data))
     showSuccess()
