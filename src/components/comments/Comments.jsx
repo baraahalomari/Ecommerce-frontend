@@ -27,10 +27,11 @@ const Comments = ({ currentPrudoct }) => {
   return (
     <div className="comment-container">
       <h3>Comments</h3>
-
+      <span className="p-input-icon-right">
       <InputText value={value1} onChange={(e) => setValue1(e.target.value)} />
-      {value1 ? <Button icon="pi pi-check" className="p-button-rounded" aria-label="Filter" id="btn-comment" onClick={handleAddComment} />
-        : <Button icon="pi pi-check" className="p-button-rounded" aria-label="Filter" id="btn-comment" disabled={true} />}
+      {value1 ? <i  className="pi pi-check" aria-label="Filter" id="btn-comment" onClick={handleAddComment} />
+        : null}
+    </span>
       {comments?.map((comment) => (
         <div key={comment.id} className="comentdiv">
           <div className="name">Name : {comment.user_name}</div>

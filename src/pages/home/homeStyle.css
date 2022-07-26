@@ -26,7 +26,11 @@
   justify-content: center;
   margin: 0.5rem auto;
   cursor: pointer;
+  /* width: 100%; */
 
+}
+#itm{
+  width: 16rem;
 }
 
 #status-bg {

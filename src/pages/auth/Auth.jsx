@@ -141,7 +141,7 @@ const Auth = () => {
                         {isSignUp && <>
                             <div className="field">
                                 <span className="p-float-label">
-                                    <InputText id="country" name="country" value={formik.values.country} onChange={formik.handleChange} className={classNames({ 'p-invalid': isFormFieldValid('country') })} />
+                                    <InputText id="country" name="country" required value={formik.values.country} onChange={formik.handleChange} className={classNames({ 'p-invalid': isFormFieldValid('country') })} />
                                     <label htmlFor="country">Country</label>
                                 </span>
                             </div>

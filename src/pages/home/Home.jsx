@@ -77,7 +77,7 @@ const Home = () => {
 
     return (
       <div className="col-12 md:col-4" id="grid-item" onClick={()=>showDetails(data)}>
-        <div className="product-grid-item card">
+        <div className="product-grid-item card" id="itm">
           <div className="product-grid-item-top">
             <div>
               <i className="pi pi-tag product-category-icon"></i>
@@ -134,7 +134,7 @@ const Home = () => {
       <div className="dataview-demo">
         <div className="card">
           <DataView value={products} layout={layout} header={header}
-            itemTemplate={itemTemplate} paginator rows={9}
+            itemTemplate={itemTemplate} paginator rows={8}
             sortOrder={sortOrder} sortField={sortField} />
         </div>
       </div>

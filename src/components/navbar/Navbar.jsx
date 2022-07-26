@@ -45,6 +45,7 @@ const Navbar = () => {
   const logout = () => {
     localStorage.removeItem('profile');
     navigate('/');
+    window.location.reload();
    
   }
   return (
